@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LUDIOS PGR-38 · 시안 A</title>
+<meta name="description" content="루디오스 PGR-38 프리미엄 스킨케어 세트 — 에센스 토너, 앰플 세럼, 인텐시브 크림 3단계 루틴. 미백·주름개선 이중 기능성.">
+<meta name="theme-color" content="#f6f1ea">
+<meta property="og:title" content="LUDIOS PGR-38 Premium Skin Care SET">
+<meta property="og:description" content="하루 끝, 온전히 나를 위한 3단계 — 토너 · 앰플 · 크림">
+<meta property="og:image" content="../assets/img/hero-set.webp">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌹</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+KR:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preload" as="image" href="../assets/img/hero-set.webp">
+<style>
+:root{
+  --ivory: oklch(96.5% 0.012 75);
+  --paper: oklch(93.5% 0.018 72);
+  --sand:  oklch(88% 0.025 70);
+  --ink:   oklch(26% 0.02 40);
+  --ink-2: oklch(45% 0.02 45);
+  --rose:  oklch(62% 0.09 45);
+  --rose-d:oklch(48% 0.08 40);
+  --red:   oklch(52% 0.17 27);
+  --gold-grad: linear-gradient(135deg,#f3d2b8 0%,#c98f6c 35%,#8a5a3f 60%,#e7b99a 100%);
+  --radius: 22px;
+  --pad: clamp(16px, 5vw, 64px);
+  --maxw: 1240px;
+  --serif-en: "Cormorant Garamond", "Noto Serif KR", serif;
+  --serif-ko: "Noto Serif KR", serif;
+  --sans: "Pretendard Variable", Pretendard, system-ui, sans-serif;
+  color-scheme: light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;letter-spacing:-.01em;overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer}
+.wrap{width:min(100% - var(--pad)*2, var(--maxw));margin-inline:auto}
+.eyebrow{font-family:var(--serif-en);font-style:italic;font-size:clamp(15px,1.4vw,18px);color:var(--rose-d);letter-spacing:.04em}
+.h-display{font-family:var(--serif-ko);font-weight:300;line-height:1.28;letter-spacing:-.03em;margin:0;text-wrap:balance}
+.gold-text{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-flex;align-items:center;gap:.6em;padding:15px 28px;border-radius:999px;border:1px solid var(--ink);background:var(--ink);color:var(--ivory);font-weight:600;font-size:15px;transition:transform .3s cubic-bezier(.2,.8,.2,1),background .3s,color .3s}
+.btn:hover{transform:translateY(-2px);background:var(--rose-d);border-color:var(--rose-d)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--ivory)}
+.btn svg{width:16px;height:16px}
+
+/* ---------- header ---------- */
+.hdr{position:fixed;inset:0 0 auto;z-index:50;transition:background .4s,box-shadow .4s}
+.hdr.scrolled{background:color-mix(in oklch,var(--ivory) 72%,transparent);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);box-shadow:0 1px 0 color-mix(in oklch,var(--ink) 8%,transparent)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--serif-en);font-size:26px;font-weight:500;letter-spacing:.28em}
+.nav{display:flex;gap:32px;font-size:14px;color:var(--ink-2)}
+.nav a{position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--rose);transform:scaleX(0);transform-origin:right;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1);transform-origin:left}
+.hdr .btn{padding:10px 20px;font-size:13px}
+@media (max-width:860px){.nav{display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;display:grid;align-items:center;padding-top:88px;overflow:clip;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:70vmax;aspect-ratio:1;border-radius:50%;background:radial-gradient(closest-side,oklch(88% 0.05 55 / .8),transparent 70%);z-index:-1}
+.hero-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(24px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(34px,5.4vw,72px)}
+.hero h1 em{font-style:normal}
+.hero p.lead{font-size:clamp(15px,1.3vw,18px);color:var(--ink-2);max-width:32em;margin:24px 0 36px}
+.hero .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{font-size:12.5px;padding:6px 12px;border-radius:999px;border:1px solid color-mix(in oklch,var(--rose) 45%,transparent);color:var(--rose-d);background:color-mix(in oklch,var(--ivory) 70%,transparent)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero-visual{position:relative}
+.hero-visual .frame{border-radius:calc(var(--radius) * 1.4);overflow:hidden;box-shadow:0 40px 80px -30px oklch(40% 0.06 40 / .45);aspect-ratio:966/777}
+.hero-visual img{width:100%;height:100%;object-fit:cover;scale:1.08;animation:heroZoom 2.4s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes heroZoom{to{scale:1}}
+.price-tag{position:absolute;left:-18px;bottom:28px;padding:16px 20px;border-radius:18px;background:color-mix(in oklch,var(--ivory) 82%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 20px 40px -20px oklch(30% 0.05 40 / .4);font-size:13px;color:var(--ink-2)}
+.price-tag strong{display:block;font-family:var(--serif-en);font-size:28px;color:var(--ink);font-weight:500;letter-spacing:.02em}
+.scroll-hint{position:absolute;left:50%;bottom:22px;translate:-50% 0;font-family:var(--serif-en);font-style:italic;font-size:13px;color:var(--ink-2);display:flex;flex-direction:column;align-items:center;gap:8px}
+.scroll-hint i{width:1px;height:38px;background:linear-gradient(var(--rose),transparent);animation:drip 2s infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-visual{order:-1}
+  .price-tag{left:12px;bottom:12px}
+  .scroll-hint{display:none}
+  .hero{min-height:auto;padding-bottom:56px}
+}
+
+/* ---------- marquee ---------- */
+.marquee{border-block:1px solid color-mix(in oklch,var(--ink) 10%,transparent);overflow:hidden;padding:18px 0;background:var(--paper)}
+.marquee-track{display:flex;gap:48px;width:max-content;animation:marq 32s linear infinite;font-family:var(--serif-en);font-size:clamp(20px,2.4vw,30px);color:var(--rose-d);white-space:nowrap}
+.marquee-track span::after{content:"✦";margin-left:48px;font-size:.6em;vertical-align:middle;color:var(--rose)}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ---------- section base ---------- */
+section{padding-block:clamp(72px,11vw,150px)}
+.sec-head{display:grid;gap:14px;margin-bottom:clamp(36px,5vw,64px);max-width:720px}
+.sec-head h2{font-size:clamp(28px,3.6vw,48px)}
+.sec-head p{color:var(--ink-2);margin:0}
+.center{text-align:center;margin-inline:auto}
+
+/* ---------- story ---------- */
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,96px);align-items:center}
+.story-img{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5}
+.story-img img{width:100%;height:100%;object-fit:cover}
+.story blockquote{margin:0;font-family:var(--serif-ko);font-weight:300;font-size:clamp(22px,2.4vw,32px);line-height:1.55;letter-spacing:-.02em;text-wrap:pretty}
+.story blockquote::before{content:"“";display:block;font-family:var(--serif-en);font-size:90px;line-height:.6;color:var(--rose)}
+.story .note{margin-top:28px;color:var(--ink-2)}
+@media (max-width:860px){.story-grid{grid-template-columns:1fr}}
+
+/* ---------- ingredients ---------- */
+.ingredients{background:var(--paper)}
+.ing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:1080px){.ing-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.ing-grid{grid-template-columns:1fr}}
+.ing{container-type:inline-size;position:relative;padding:32px 28px 28px;border-radius:var(--radius);background:var(--ivory);border:1px solid color-mix(in oklch,var(--ink) 7%,transparent);overflow:hidden;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.ing:hover{transform:translateY(-6px);box-shadow:0 30px 50px -30px oklch(40% 0.06 40 / .45)}
+.ing .num{font-family:var(--serif-en);font-size:14px;color:var(--rose-d);letter-spacing:.12em}
+.ing h3{font-family:var(--serif-ko);font-weight:400;font-size:22px;margin:18px 0 4px}
+.ing .en{font-family:var(--serif-en);font-style:italic;color:var(--ink-2);font-size:15px}
+.ing p{font-size:14.5px;color:var(--ink-2);margin:16px 0 0}
+.ing svg{position:absolute;right:-14px;top:-14px;width:110px;height:110px;opacity:.18;color:var(--rose-d)}
+@container (min-width:300px){.ing h3{font-size:24px}}
+.fn-banner{margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:22px 28px;border-radius:var(--radius);background:var(--ink);color:var(--ivory)}
+.fn-banner b{font-family:var(--serif-ko);font-weight:400;font-size:clamp(17px,1.8vw,22px)}
+.fn-banner span{font-size:13px;opacity:.7}
+
+/* ---------- routine (steps) ---------- */
+.steps-tabs{display:flex;gap:6px;padding:6px;border-radius:999px;background:var(--paper);width:fit-content;margin:0 auto clamp(32px,4vw,56px);max-width:100%;overflow-x:auto;scrollbar-width:none}
+.steps-tabs button{border:0;background:transparent;padding:10px 20px;border-radius:999px;font-size:14px;white-space:nowrap;color:var(--ink-2);transition:background .3s,color .3s}
+.steps-tabs button[aria-selected="true"]{background:var(--ink);color:var(--ivory)}
+.step-panel{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,88px);align-items:center;view-transition-name:step-panel}
+.step-panel .pic{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;background:var(--paper);view-transition-name:step-pic}
+.step-panel .pic img{width:100%;height:100%;object-fit:cover}
+.step-panel .step-no{font-family:var(--serif-en);font-size:clamp(70px,9vw,130px);line-height:1;color:transparent;-webkit-text-stroke:1px var(--rose)}
+.step-panel h3{font-family:var(--serif-en);font-weight:500;font-size:clamp(28px,3.4vw,44px);margin:8px 0 0;letter-spacing:.01em}
+.step-panel .ko{font-family:var(--serif-ko);font-size:18px;color:var(--ink-2);margin-top:4px}
+.step-panel .vol{display:inline-block;margin-top:16px;font-size:13px;padding:5px 12px;border-radius:999px;background:var(--paper);color:var(--rose-d)}
+.step-panel p{color:var(--ink-2);margin:22px 0 0;max-width:30em}
+.meter{margin-top:28px;display:grid;gap:14px;max-width:360px}
+.meter div{display:grid;grid-template-columns:72px 1fr;align-items:center;gap:14px;font-size:13px;color:var(--ink-2)}
+.meter .bar{height:4px;border-radius:4px;background:var(--sand);overflow:hidden}
+.meter .bar i{display:block;height:100%;background:var(--gold-grad);border-radius:inherit;width:var(--v);transition:width 1s cubic-bezier(.2,.8,.2,1)}
+@media (max-width:480px){.steps-tabs .lg{display:none}.steps-tabs button{padding:10px 16px}}
+::view-transition-old(step-panel),::view-transition-new(step-panel){animation-duration:.45s}
+@media (max-width:860px){.step-panel{grid-template-columns:1fr}.step-panel .pic{aspect-ratio:1/1}}
+
+/* ---------- how to use ---------- */
+.howto{background:linear-gradient(180deg,var(--ivory),var(--paper))}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:f;padding:0;margin:0}
+.flow li{list-style:none;position:relative;padding:26px 22px;border-radius:var(--radius);background:var(--ivory);border:1px solid color-mix(in oklch,var(--ink) 7%,transparent)}
+.flow li::before{counter-increment:f;content:"0" counter(f);font-family:var(--serif-en);color:var(--rose-d);font-size:14px;letter-spacing:.1em}
+.flow li.opt{border-style:dashed;background:transparent}
+.flow b{display:block;font-family:var(--serif-ko);font-weight:400;font-size:18px;margin:10px 0 6px}
+.flow span{font-size:13.5px;color:var(--ink-2)}
+@media (max-width:860px){.flow{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.flow{grid-template-columns:1fr}}
+.tip{margin-top:20px;font-size:13.5px;color:var(--ink-2)}
+
+/* ---------- texture gallery ---------- */
+.gallery{display:grid;grid-auto-flow:column;grid-auto-columns:min(78%,380px);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:18px;scrollbar-width:thin;scrollbar-color:var(--rose) transparent;overscroll-behavior-x:contain}
+.gallery figure{margin:0;scroll-snap-align:start}
+.gallery .ph{border-radius:var(--radius);overflow:hidden;aspect-ratio:3/4}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:scale .8s cubic-bezier(.2,.8,.2,1)}
+.gallery figure:hover img{scale:1.05}
+.gallery figcaption{padding:14px 4px 0;font-size:14px;color:var(--ink-2)}
+.gallery figcaption b{font-family:var(--serif-en);font-weight:500;font-size:17px;color:var(--ink);display:block}
+
+/* ---------- review ---------- */
+.review{background:var(--ink);color:var(--ivory)}
+.review .eyebrow{color:oklch(80% 0.06 55)}
+.review h2{color:var(--ivory)}
+.review .sec-head p{color:oklch(80% 0.01 60)}
+.rv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.rv{padding:30px;border-radius:var(--radius);background:oklch(32% 0.02 40);border:1px solid oklch(40% 0.02 40)}
+.rv .tag{font-size:12px;letter-spacing:.14em;color:oklch(78% 0.07 55);text-transform:uppercase}
+.rv p{font-family:var(--serif-ko);font-weight:300;font-size:18px;line-height:1.6;margin:14px 0 0}
+.rv-src{margin-top:26px;font-size:13px;color:oklch(72% 0.01 60)}
+.rv-src a{text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- gift ---------- */
+.gift-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(28px,6vw,88px);align-items:center}
+.gift-img{border-radius:var(--radius);overflow:hidden;aspect-ratio:599/818;max-height:720px}
+.gift-img img{width:100%;height:100%;object-fit:cover}
+.gift ul{padding:0;margin:28px 0 0;display:grid;gap:12px}
+.gift li{list-style:none;display:flex;gap:12px;align-items:flex-start;color:var(--ink-2)}
+.gift li::before{content:"";flex:none;width:18px;height:18px;margin-top:4px;border-radius:50%;background:var(--gold-grad)}
+@media (max-width:860px){.gift-grid{grid-template-columns:1fr}.gift-img{max-height:none;aspect-ratio:4/5}}
+
+/* ---------- buy ---------- */
+.buy{background:var(--paper)}
+.buy-card{display:grid;grid-template-columns:1fr 1fr;border-radius:calc(var(--radius) * 1.4);overflow:hidden;background:var(--ivory);box-shadow:0 40px 80px -40px oklch(40% 0.06 40 / .4)}
+.buy-card .img{background:#efe8df}
+.buy-card .img img{width:100%;height:100%;object-fit:cover}
+.buy-card .body{padding:clamp(28px,4vw,56px)}
+.buy-card h2{font-family:var(--serif-en);font-weight:500;font-size:clamp(26px,3vw,38px);margin:6px 0 4px;line-height:1.2}
+.buy-card .ko{font-family:var(--serif-ko);color:var(--ink-2)}
+.spec{width:100%;border-collapse:collapse;margin:26px 0;font-size:14px}
+.spec th,.spec td{text-align:left;padding:12px 0;border-bottom:1px solid color-mix(in oklch,var(--ink) 9%,transparent);font-weight:400}
+.spec th{color:var(--ink-2);width:40%}
+.price{display:flex;align-items:baseline;gap:10px;margin-bottom:24px}
+.price b{font-family:var(--serif-en);font-size:44px;font-weight:500;letter-spacing:.01em}
+.price span{color:var(--ink-2)}
+.buy-actions{display:flex;flex-wrap:wrap;gap:10px}
+@media (max-width:860px){.buy-card{grid-template-columns:1fr}.buy-card .img{aspect-ratio:4/3}}
+
+/* ---------- faq ---------- */
+.faq-list{max-width:820px;margin-inline:auto;display:grid;gap:10px}
+.faq-list details{border-radius:16px;background:var(--paper);padding:0 24px;interpolate-size:allow-keywords}
+.faq-list details::details-content{block-size:0;overflow:clip;transition:block-size .4s,content-visibility .4s allow-discrete}
+.faq-list details[open]::details-content{block-size:auto}
+.faq-list summary{list-style:none;cursor:pointer;padding:20px 0;display:flex;justify-content:space-between;gap:16px;font-weight:600;font-size:15.5px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"+";font-family:var(--serif-en);font-size:24px;line-height:1;color:var(--rose-d);transition:rotate .3s}
+.faq-list details[open] summary::after{rotate:45deg}
+.faq-list details p{margin:0;padding:0 0 22px;color:var(--ink-2);font-size:14.5px}
+
+/* ---------- footer ---------- */
+footer{padding:56px 0 120px;border-top:1px solid color-mix(in oklch,var(--ink) 8%,transparent);font-size:13px;color:var(--ink-2)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+footer .logo{color:var(--ink)}
+
+/* ---------- mobile sticky buy bar ---------- */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;display:none;align-items:center;justify-content:space-between;gap:12px;padding:10px 10px 10px 20px;border-radius:999px;background:color-mix(in oklch,var(--ink) 92%,transparent);color:var(--ivory);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 20px 40px -16px rgba(0,0,0,.4);translate:0 140%;transition:translate .5s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{translate:0 0}
+.mbar small{display:block;font-size:11px;opacity:.7}
+.mbar b{font-family:var(--serif-en);font-size:20px;font-weight:500}
+.mbar .btn{background:var(--ivory);color:var(--ink);border-color:var(--ivory);padding:12px 22px}
+@media (max-width:860px){.mbar{display:flex}}
+
+/* ---------- dialog ---------- */
+dialog{border:0;border-radius:24px;padding:0;width:min(440px,calc(100% - 32px));background:var(--ivory);color:var(--ink);box-shadow:0 40px 80px -20px rgba(0,0,0,.35)}
+dialog::backdrop{background:oklch(20% 0.02 40 / .45);backdrop-filter:blur(6px)}
+dialog[open]{animation:pop .4s cubic-bezier(.2,.8,.2,1)}
+@keyframes pop{from{opacity:0;transform:translateY(20px) scale(.97)}}
+.dlg{padding:32px}
+.dlg h3{font-family:var(--serif-ko);font-weight:400;font-size:22px;margin:0 0 8px}
+.dlg p{color:var(--ink-2);font-size:14px;margin:0 0 20px}
+.dlg .row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-block:1px solid color-mix(in oklch,var(--ink) 9%,transparent);margin-bottom:20px}
+.qty{display:flex;align-items:center;gap:4px}
+.qty button{width:34px;height:34px;border-radius:50%;border:1px solid var(--sand);background:transparent}
+.qty output{min-width:28px;text-align:center;font-weight:600}
+.dlg .total{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:22px}
+.dlg .total b{font-family:var(--serif-en);font-size:30px;font-weight:500}
+.dlg .btn{width:100%;justify-content:center}
+.dlg .close{position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:50%;border:0;background:var(--paper);font-size:18px}
+
+/* ---------- reveal (scroll-driven, progressive) ---------- */
+.rv-up{opacity:0;transform:translateY(40px);transition:opacity 1s cubic-bezier(.2,.8,.2,1),transform 1s cubic-bezier(.2,.8,.2,1)}
+.rv-up.in{opacity:1;transform:none}
+@supports (animation-timeline: view()){
+  .rv-up{opacity:1;transform:none;transition:none;animation:rise linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+  @keyframes rise{from{opacity:0;transform:translateY(48px)}to{opacity:1;transform:none}}
+  .parallax img{animation:para linear both;animation-timeline:view()}
+  @keyframes para{from{transform:translateY(-6%) scale(1.12)}to{transform:translateY(6%) scale(1.12)}}
+  .progress{position:fixed;inset:0 0 auto;height:2px;z-index:70;background:var(--gold-grad);transform-origin:left;animation:grow linear both;animation-timeline:scroll(root)}
+  @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv-up{opacity:1;transform:none}
+}
+.draft-badge{position:fixed;left:12px;bottom:12px;z-index:40;font-size:11px;letter-spacing:.08em;padding:6px 10px;border-radius:8px;background:var(--red);color:#fff;opacity:.9;pointer-events:none}
+@media (max-width:860px){.draft-badge{bottom:auto;top:76px;left:auto;right:12px}}
+</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<div class="draft-badge">시안 A · Rose Gold Atelier</div>
+
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="LUDIOS 홈">LUDIOS</a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#ingredients">성분</a>
+      <a href="#routine">3-Step 루틴</a>
+      <a href="#texture">텍스처</a>
+      <a href="#gift">패키지</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="btn" data-open-buy>구매하기</button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="rv-up">
+        <div class="eyebrow">PGR-38 Premium Skin Care SET</div>
+        <h1 class="h-display" style="margin-top:18px">하루의 끝,<br><em class="gold-text">온전히 나를 위한</em><br>세 번의 터치</h1>
+        <p class="lead">에센스 토너, 앰플 세럼, 인텐시브 크림.<br>인삼과 동충하초 추출물을 담은 루디오스 PGR-38로 복잡하지 않은 3단계 루틴을 시작하세요.</p>
+        <div class="hero-cta">
+          <button class="btn" data-open-buy>세트 구매하기
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <a class="btn ghost" href="#routine">루틴 살펴보기</a>
+        </div>
+        <div class="badges">
+          <span class="chip">미백·주름개선 이중 기능성</span>
+          <span class="chip">3-Step 올인원 세트</span>
+          <span class="chip">선물용 프리미엄 패키지</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="frame"><img src="../assets/img/hero-set.webp" alt="루디오스 PGR-38 프리미엄 스킨케어 세트 박스와 토너, 앰플 세럼, 인텐시브 크림" width="966" height="777" fetchpriority="high"></div>
+        <div class="price-tag">3종 세트<strong>₩218,000</strong></div>
+      </div>
+    </div>
+    <div class="scroll-hint">scroll<i></i></div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Ginseng Extract</span><span>Cordyceps Extract</span><span>Ceramide</span><span>Peptide</span><span>Essence Toner</span><span>Ampoule Serum</span><span>Intensive Cream</span>
+      <span>Ginseng Extract</span><span>Cordyceps Extract</span><span>Ceramide</span><span>Peptide</span><span>Essence Toner</span><span>Ampoule Serum</span><span>Intensive Cream</span>
+    </div>
+  </div>
+
+  <!-- STORY -->
+  <section class="story">
+    <div class="wrap story-grid">
+      <div class="story-img parallax rv-up"><img src="../assets/img/lineup.webp" alt="루디오스 PGR-38 3종 제품 라인업" loading="lazy" width="598" height="803"></div>
+      <div class="rv-up">
+        <div class="eyebrow">Our Story</div>
+        <blockquote style="margin-top:18px">퇴근, 저녁, 아이 재우기.<br>늘 뒷전이던 내 피부에게<br><span class="gold-text">가장 짧고 확실한 루틴</span>을.</blockquote>
+        <p class="note">바쁜 하루 끝에 여러 단계를 챙기기는 쉽지 않습니다. 루디오스 PGR-38은 토너 → 앰플 → 크림, 단 세 단계로 피부 결과 보습을 차분하게 정돈하도록 구성했습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INGREDIENTS -->
+  <section class="ingredients" id="ingredients">
+    <div class="wrap">
+      <div class="sec-head rv-up">
+        <div class="eyebrow">Key Ingredients</div>
+        <h2 class="h-display">자연에서 온 원료,<br>피부 장벽을 생각한 배합</h2>
+        <p>PGR-38 라인 전 제품에 담긴 핵심 성분을 소개합니다.</p>
+      </div>
+      <div class="ing-grid">
+        <article class="ing rv-up">
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M50 10c-6 18 6 26 0 44s8 26 0 36M50 54c-12-4-20 4-30 0M50 64c10-6 18 2 28-4M50 34c-8-4-14 0-20-4"/></svg>
+          <div class="num">01</div><h3>인삼 추출물</h3><div class="en">Ginseng Extract</div>
+          <p>브랜드의 상징이자 PGR-38 라인의 중심 원료. 토너·앰플·크림 전 단계에 담았습니다.</p>
+        </article>
+        <article class="ing rv-up">
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M50 90V40M50 40c-14 0-22-10-22-20 10 0 22 6 22 20zM50 40c14 0 22-10 22-20-10 0-22 6-22 20zM50 60c-10 0-16-6-18-14M50 60c10 0 16-6 18-14"/></svg>
+          <div class="num">02</div><h3>동충하초 추출물</h3><div class="en">Cordyceps Extract</div>
+          <p>귀한 원료로 알려진 동충하초 추출물을 더해 프리미엄 라인의 격을 완성했습니다.</p>
+        </article>
+        <article class="ing rv-up">
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="16" y="20" width="30" height="16" rx="3"/><rect x="54" y="20" width="30" height="16" rx="3"/><rect x="34" y="42" width="30" height="16" rx="3"/><rect x="16" y="64" width="30" height="16" rx="3"/><rect x="54" y="64" width="30" height="16" rx="3"/></svg>
+          <div class="num">03</div><h3>세라마이드</h3><div class="en">Ceramide</div>
+          <p>피부 장벽을 구성하는 성분 중 하나. 인텐시브 크림에 담아 마지막 단계의 보습감을 채웁니다.</p>
+        </article>
+        <article class="ing rv-up">
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="22" cy="50" r="8"/><circle cx="50" cy="30" r="8"/><circle cx="78" cy="50" r="8"/><circle cx="50" cy="72" r="8"/><path d="M28 45l16-10M56 34l16 10M72 56L56 68M44 68L28 56"/></svg>
+          <div class="num">04</div><h3>펩타이드</h3><div class="en">Peptide</div>
+          <p>펩타이드 계열 성분을 인텐시브 크림에 배합해 탄탄한 마무리감을 더했습니다.</p>
+        </article>
+      </div>
+      <div class="fn-banner rv-up">
+        <b>3종 모두 미백 · 주름개선 이중 기능성 화장품</b>
+        <span>* 제품 패키지 표기 기준</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROUTINE -->
+  <section class="routine" id="routine">
+    <div class="wrap">
+      <div class="sec-head center rv-up">
+        <div class="eyebrow">3-Step Ritual</div>
+        <h2 class="h-display">가볍게 스며들고,<br>촉촉하게 감싸는 3단계</h2>
+      </div>
+      <div class="steps-tabs" role="tablist" aria-label="제품 단계">
+        <button role="tab" aria-selected="true" data-step="0">01 <span class="lg">Essence </span>Toner</button>
+        <button role="tab" aria-selected="false" data-step="1">02 <span class="lg">Ampoule </span>Serum</button>
+        <button role="tab" aria-selected="false" data-step="2">03 <span class="lg">Intensive </span>Cream</button>
+      </div>
+      <div class="step-panel" id="stepPanel" role="tabpanel" aria-live="polite">
+        <div class="pic"><img id="stepImg" src="../assets/img/toner-texture.webp" alt=""></div>
+        <div>
+          <div class="step-no" id="stepNo">01</div>
+          <h3 id="stepName">Essence Toner</h3>
+          <div class="ko" id="stepKo">PGR-38 에센스 토너</div>
+          <span class="vol" id="stepVol">130ml</span>
+          <p id="stepDesc"></p>
+          <div class="meter" id="stepMeter"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO -->
+  <section class="howto">
+    <div class="wrap">
+      <div class="sec-head rv-up">
+        <div class="eyebrow">How to Use</div>
+        <h2 class="h-display">피부 컨디션에 맞춰<br>유연하게 쌓는 루틴</h2>
+      </div>
+      <ol class="flow">
+        <li class="rv-up"><b>에센스 토너</b><span>세안 후 손바닥에 덜어 얼굴 전체에 가볍게 흡수시킵니다.</span></li>
+        <li class="rv-up"><b>앰플 세럼</b><span>적당량을 펴 바른 뒤 손바닥으로 감싸 스며들게 합니다.</span></li>
+        <li class="rv-up opt"><b>수분 크림 (선택)</b><span>속건조가 느껴지는 날엔 평소 쓰던 수분 제품을 더해도 좋아요.</span></li>
+        <li class="rv-up"><b>인텐시브 크림</b><span>마지막 단계로 얼굴 전체를 감싸듯 발라 마무리합니다.</span></li>
+      </ol>
+      <p class="tip">* 피부 타입과 계절에 따라 사용량과 단계를 조절하세요.</p>
+    </div>
+  </section>
+
+  <!-- TEXTURE -->
+  <section class="texture" id="texture">
+    <div class="wrap">
+      <div class="sec-head rv-up">
+        <div class="eyebrow">Texture</div>
+        <h2 class="h-display">눈으로 먼저 느끼는 제형</h2>
+        <p>옆으로 넘겨 3종의 텍스처를 확인하세요.</p>
+      </div>
+      <div class="gallery" tabindex="0" aria-label="텍스처 갤러리">
+        <figure><div class="ph"><img src="../assets/img/toner-texture.webp" alt="손바닥 위 에센스 토너 제형" loading="lazy"></div><figcaption><b>Essence Toner</b>주르륵 흐르는 가벼운 워터 제형</figcaption></figure>
+        <figure><div class="ph"><img src="../assets/img/serum-texture.webp" alt="손등 위 앰플 세럼 제형" loading="lazy"></div><figcaption><b>Ampoule Serum</b>무겁지 않게 수분감 있게 발리는 제형</figcaption></figure>
+        <figure><div class="ph"><img src="../assets/img/cream-spread.webp" alt="손등에 펴 바른 인텐시브 크림" loading="lazy"></div><figcaption><b>Intensive Cream</b>많이 발라도 부드러운 발림성</figcaption></figure>
+        <figure><div class="ph"><img src="../assets/img/cream-jar.webp" alt="뚜껑을 연 인텐시브 크림 용기" loading="lazy"></div><figcaption><b>Intensive Cream</b>은은한 향, 촉촉한 마무리</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEW -->
+  <section class="review">
+    <div class="wrap">
+      <div class="sec-head rv-up">
+        <div class="eyebrow">Real Voice</div>
+        <h2 class="h-display">바쁜 워킹맘이 먼저 써봤어요</h2>
+        <p>실사용 블로그 후기에서 가져온 첫 사용 인상입니다.</p>
+      </div>
+      <div class="rv-grid">
+        <div class="rv rv-up"><div class="tag">Toner · Serum</div><p>토너와 앰플은 가볍고 촉촉하게, 다음 단계가 답답하지 않아요.</p></div>
+        <div class="rv rv-up"><div class="tag">Cream</div><p>유분감이 살짝 더해져 마지막에 보습감을 채워주는 느낌이에요.</p></div>
+        <div class="rv rv-up"><div class="tag">Next Morning</div><p>자고 일어난 다음 날 아침에도 볼에 촉촉함이 남아 있었어요.</p></div>
+        <div class="rv rv-up"><div class="tag">Scent · Package</div><p>향은 은은하고, 로즈골드 패키지는 선물용으로도 좋아요.</p></div>
+      </div>
+      <p class="rv-src">출처: 네이버 블로그 ‘다담노트’ 실사용 후기 요약 · <a href="https://blog.naver.com/minea0210/224376721652" target="_blank" rel="noopener">원문 보기</a> · 개인의 사용감이며 피부 타입에 따라 다를 수 있습니다.</p>
+    </div>
+  </section>
+
+  <!-- GIFT -->
+  <section class="gift" id="gift">
+    <div class="wrap gift-grid">
+      <div class="gift-img parallax rv-up"><img src="../assets/img/box-open.webp" alt="로즈골드 박스를 연 루디오스 세트 구성" loading="lazy" width="599" height="818"></div>
+      <div class="rv-up">
+        <div class="eyebrow">Gift Edition</div>
+        <h2 class="h-display" style="font-size:clamp(28px,3.6vw,48px);margin-top:14px">여는 순간부터<br><span class="gold-text">특별한 선물</span></h2>
+        <p style="color:var(--ink-2);margin-top:20px">로즈골드 인테리어 박스에 세 제품이 가지런히 담겨, 받는 분께 그대로 전하기 좋은 프리미엄 패키지입니다.</p>
+        <ul>
+          <li>로즈골드 캡 · 크리스털 클리어 보틀</li>
+          <li>인삼 드로잉을 새긴 린넨 텍스처 기프트 박스</li>
+          <li>브랜드 카드 동봉 — 명절·기념일·감사 선물로</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUY -->
+  <section class="buy" id="buy">
+    <div class="wrap">
+      <div class="buy-card rv-up">
+        <div class="img"><img src="../assets/img/lineup-card.webp" alt="루디오스 PGR-38 세트" loading="lazy"></div>
+        <div class="body">
+          <div class="eyebrow">LUDIOS</div>
+          <h2>PGR-38 Premium<br>Skin Care SET</h2>
+          <div class="ko">루디오스 피지알-38 프리미엄 스킨케어 세트</div>
+          <table class="spec">
+            <tr><th>에센스 토너</th><td>130ml</td></tr>
+            <tr><th>앰플 세럼</th><td>50ml</td></tr>
+            <tr><th>인텐시브 크림</th><td>50ml</td></tr>
+            <tr><th>기능성</th><td>미백 · 주름개선 (이중 기능성)</td></tr>
+          </table>
+          <div class="price"><b>₩218,000</b><span>3종 세트</span></div>
+          <div class="buy-actions">
+            <button class="btn" data-open-buy>구매하기</button>
+            <a class="btn ghost" href="#faq">자주 묻는 질문</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="sec-head center rv-up"><div class="eyebrow">FAQ</div><h2 class="h-display">자주 묻는 질문</h2></div>
+      <div class="faq-list">
+        <details class="rv-up"><summary>어떤 순서로 사용하나요?</summary><p>에센스 토너 → 앰플 세럼 → 인텐시브 크림 순서로 사용합니다. 건조한 날에는 앰플과 크림 사이에 평소 쓰는 수분 제품을 더해도 좋습니다.</p></details>
+        <details class="rv-up"><summary>수부지(수분 부족형 지성) 피부도 쓸 수 있나요?</summary><p>토너와 앰플은 가벼운 흐르는 제형이며, 크림은 약간의 유분감이 있는 편입니다. 피부 상태에 따라 크림 양을 조절해 사용하세요.</p></details>
+        <details class="rv-up"><summary>향이 강한가요?</summary><p>강하지 않고 은은한 편입니다. 다만 향에 민감하시다면 사용 전 손목 안쪽에 먼저 테스트해 보세요.</p></details>
+        <details class="rv-up"><summary>선물 포장이 되나요?</summary><p>기본 구성이 로즈골드 기프트 박스로 되어 있어 별도 포장 없이 선물하기 좋습니다.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><div class="logo">LUDIOS</div><p style="margin:10px 0 0">PGR-38 Premium Skin Care SET</p></div>
+    <div>본 페이지는 고객 검토용 디자인 시안입니다.<br>구매 링크·사업자 정보는 확정 후 반영됩니다.</div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <div><small>PGR-38 3종 세트</small><b>₩218,000</b></div>
+  <button class="btn" data-open-buy>구매하기</button>
+</div>
+
+<dialog id="buyDlg" aria-labelledby="dlgTitle">
+  <form method="dialog" class="dlg" style="position:relative">
+    <button class="close" value="close" aria-label="닫기">×</button>
+    <h3 id="dlgTitle">PGR-38 프리미엄 세트</h3>
+    <p>토너 130ml · 앰플 세럼 50ml · 인텐시브 크림 50ml</p>
+    <div class="row"><span>수량</span>
+      <div class="qty"><button type="button" data-q="-1" aria-label="수량 감소">−</button><output id="qty">1</output><button type="button" data-q="1" aria-label="수량 증가">+</button></div>
+    </div>
+    <div class="total"><span>총 금액</span><b id="total">₩218,000</b></div>
+    <button class="btn" value="buy">구매 페이지로 이동 (시안)</button>
+  </form>
+</dialog>
+
+<script>
+(() => {
+  // header state + mobile buy bar
+  const hdr = document.getElementById('hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    const y = scrollY;
+    hdr.classList.toggle('scrolled', y > 20);
+    const nearEnd = innerHeight + y > document.body.scrollHeight - 500;
+    mbar.classList.toggle('show', y > innerHeight * .8 && !nearEnd);
+  };
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // reveal fallback for browsers without scroll-driven animations
+  if (!CSS.supports('animation-timeline: view()')) {
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.15});
+    document.querySelectorAll('.rv-up').forEach(el => io.observe(el));
+  }
+
+  // step tabs (View Transitions API)
+  const steps = [
+    {no:'01', name:'Essence Toner', ko:'PGR-38 에센스 토너', vol:'130ml', img:'toner-texture', alt:'손바닥 위 에센스 토너',
+     desc:'루틴의 첫 단계. 주르륵 흐르는 가벼운 제형이 빠르게 흡수되어, 다음 단계를 바르기 전부터 답답하지 않습니다.',
+     m:[['흡수감',92],['촉촉함',68],['유분감',15]]},
+    {no:'02', name:'Ampoule Serum', ko:'PGR-38 앰플 세럼', vol:'50ml', img:'serum-texture', alt:'손등 위 앰플 세럼',
+     desc:'진득할 것 같은 앰플의 선입견을 깨는 흐르는 타입. 토너보다 한층 촉촉하지만 무겁게 달라붙지 않고 수분감 있게 발립니다.',
+     m:[['흡수감',80],['촉촉함',82],['유분감',28]]},
+    {no:'03', name:'Intensive Cream', ko:'PGR-38 인텐시브 크림', vol:'50ml', img:'cream-open', alt:'인텐시브 크림 제형',
+     desc:'세라마이드·펩타이드 계열 성분을 담은 마지막 단계. 적당한 유분감으로 피부를 촉촉하게 감싸, 다음 날 아침까지 편안한 보습감을 남깁니다.',
+     m:[['흡수감',62],['촉촉함',95],['유분감',58]]},
+  ];
+  const $ = id => document.getElementById(id);
+  const render = i => {
+    const s = steps[i];
+    $('stepNo').textContent = s.no; $('stepName').textContent = s.name; $('stepKo').textContent = s.ko;
+    $('stepVol').textContent = s.vol; $('stepDesc').textContent = s.desc;
+    $('stepImg').src = `../assets/img/${s.img}.webp`; $('stepImg').alt = s.alt;
+    $('stepMeter').innerHTML = s.m.map(([k]) => `<div><span>${k}</span><span class="bar"><i style="--v:0%"></i></span></div>`).join('');
+    requestAnimationFrame(() => requestAnimationFrame(() =>
+      $('stepMeter').querySelectorAll('i').forEach((el, j) => el.style.setProperty('--v', s.m[j][1] + '%'))));
+    document.querySelectorAll('[data-step]').forEach(b => b.setAttribute('aria-selected', String(+b.dataset.step === i)));
+  };
+  render(0);
+  document.querySelectorAll('[data-step]').forEach(b => b.addEventListener('click', () => {
+    const i = +b.dataset.step;
+    document.startViewTransition ? document.startViewTransition(() => render(i)) : render(i);
+  }));
+  // swipe on step panel (mobile)
+  let sx = null; const panel = $('stepPanel');
+  panel.addEventListener('touchstart', e => sx = e.touches[0].clientX, {passive:true});
+  panel.addEventListener('touchend', e => {
+    if (sx == null) return; const dx = e.changedTouches[0].clientX - sx; sx = null;
+    if (Math.abs(dx) < 50) return;
+    const cur = +document.querySelector('[data-step][aria-selected="true"]').dataset.step;
+    const nx = Math.min(2, Math.max(0, cur + (dx < 0 ? 1 : -1)));
+    if (nx !== cur) document.querySelector(`[data-step="${nx}"]`).click();
+  });
+
+  // buy dialog
+  const dlg = $('buyDlg'); let q = 1;
+  const fmt = n => '₩' + n.toLocaleString('ko-KR');
+  document.querySelectorAll('[data-open-buy]').forEach(b => b.addEventListener('click', () => dlg.showModal()));
+  dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+  dlg.querySelectorAll('[data-q]').forEach(b => b.addEventListener('click', () => {
+    q = Math.max(1, Math.min(9, q + +b.dataset.q)); $('qty').textContent = q; $('total').textContent = fmt(218000 * q);
+  }));
+})();
+</script>
+</body>
+</html>
